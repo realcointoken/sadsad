@@ -1,7 +1,7 @@
 {
-  "short_name": "BriseSwap",
-  "name": "BriseSwap",
-  "description": "Farm BSWAP with BriseSwap LP Tokens",
+  "short_name": "StoncksUSD Swap",
+  "name": "StoncksUSD Swap",
+  "description": "Farm StoncksUSD with Stoncks LP Tokens",
   "icons": [
     {
       "src": "favicon.ico",
