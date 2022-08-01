@@ -88,9 +88,9 @@ const Home: React.FC = () => {
     <Page>
       <Hero>
         <Heading as="h1" scale="xl" mb="24px" color="primaryDark">
-          {t('BriseSwap')}
+          {t('StoncksUSD Swap')}
         </Heading>
-        <Text color="tertiary">{t('Bringing the true meaning of DeFi to you.')}</Text>
+        <Text color="tertiary">{t('This is a first algorithm Stablecoin on Brise.')}</Text>
       </Hero>
       <div>
         <Cards>
