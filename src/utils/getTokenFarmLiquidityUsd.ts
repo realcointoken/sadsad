@@ -10,7 +10,7 @@ const amountIn = "1000"
 
 const getTokenFarmLiquidityUsd = async(tokenAddress: Address, tokenDecimals: number, stakedAmount: string): Promise<BigNumber> => {
     
-    const path = [getAddress(tokenAddress), wbriseAddress]
+    const path = [getAddress(tokenAddress), StonksUSDAddress]
     const brisePriceUSD: BigNumber = await brisePriceFromAPI()
 
     const router = getRouterContract()
