@@ -5,8 +5,8 @@ import { Address } from 'config/constants/types'
 import { getRouterContract } from './contractHelpers'
 import brisePriceFromAPI from './brisePriceFromAPI';
 
-const wbriseAddress = "0x0eb9036cbE0f052386f36170c6b07eF0a0E3f710"
-const amountIn = "1000000000000000000"
+const StonksUSDAddress = "0xD65b0bEdC15d4a33EDd311DF3D3BBe56a8017F87"
+const amountIn = "1000"
 
 const getTokenFarmLiquidityUsd = async(tokenAddress: Address, tokenDecimals: number, stakedAmount: string): Promise<BigNumber> => {
     
@@ -22,7 +22,7 @@ const getTokenFarmLiquidityUsd = async(tokenAddress: Address, tokenDecimals: num
     // Get total staked token
     // Get staked token price in wbrise
     // Get wbrise price
-    // Convert staked token price in wbrise to busd
+    // Convert staked token price in StonksUSD to busd
 }
 
 export default getTokenFarmLiquidityUsd
