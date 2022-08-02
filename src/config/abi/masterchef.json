@@ -3,10 +3,10 @@
     "type": "constructor",
     "stateMutability": "nonpayable",
     "inputs": [
-      { "type": "address", "name": "_StoncksUSD", "internalType": "contract StoncksUSD" },
+      { "type": "address", "name": "_bswap", "internalType": "contract BswapToken" },
       { "type": "address", "name": "_gert", "internalType": "contract GertBar" },
       { "type": "address", "name": "_devaddr", "internalType": "address" },
-      { "type": "uint256", "name": "_stoncksusdPerBlock", "internalType": "uint256" },
+      { "type": "uint256", "name": "_bswapPerBlock", "internalType": "uint256" },
       { "type": "uint256", "name": "_startBlock", "internalType": "uint256" }
     ]
   },
@@ -72,15 +72,15 @@
   {
     "type": "function",
     "stateMutability": "view",
-    "outputs": [{ "type": "address", "name": "", "internalType": "contract StoncksUSD" }],
-    "name": "StoncksUSD",
+    "outputs": [{ "type": "address", "name": "", "internalType": "contract BswapToken" }],
+    "name": "bswap",
     "inputs": []
   },
   {
     "type": "function",
     "stateMutability": "view",
     "outputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }],
-    "name": "stoncksusdPerBlock",
+    "name": "bswapPerBlock",
     "inputs": []
   },
   {
@@ -171,7 +171,7 @@
     "type": "function",
     "stateMutability": "view",
     "outputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }],
-    "name": "pendingStonckUSD",
+    "name": "pendingBswap",
     "inputs": [
       { "type": "uint256", "name": "_pid", "internalType": "uint256" },
       { "type": "address", "name": "_user", "internalType": "address" }
@@ -184,7 +184,7 @@
       { "type": "address", "name": "lpToken", "internalType": "contract IBEP20" },
       { "type": "uint256", "name": "allocPoint", "internalType": "uint256" },
       { "type": "uint256", "name": "lastRewardBlock", "internalType": "uint256" },
-      { "type": "uint256", "name": "accStoncksUSDPerShare", "internalType": "uint256" },
+      { "type": "uint256", "name": "accBswapPerShare", "internalType": "uint256" },
       { "type": "uint8", "name": "depositFee", "internalType": "uint8" },
       { "type": "uint8", "name": "withdrawalFee", "internalType": "uint8" }
     ],
