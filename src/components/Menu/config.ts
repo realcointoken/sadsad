@@ -110,7 +110,7 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
     items: [
       {
         label: t('Contact'),
-        href: 'https://t.me/brisepadco',
+        href: 'https://t.me/StoncksUSD',
       },
       // {
       //   label: t('Voting'),
@@ -118,7 +118,7 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
       // },
       {
         label: t('Github'),
-        href: 'https://github.com/brisepad',
+        href: 'https://github.com/StoncksUSD',
       },
       // {
       //   label: t('Docs'),
@@ -126,7 +126,7 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
       // },
       {
         label: t('Blog'),
-        href: 'https://brisedaily.com/',
+        href: 'https://stoncksusd.com/',
       },
       // {
       //   label: t('Merch'),
