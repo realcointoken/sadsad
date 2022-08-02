@@ -91,8 +91,8 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, account }
       ? `$${farm.liquidity.toNumber().toLocaleString(undefined, { maximumFractionDigits: 0 })}`
       : ''
 
-  const lpLabel = farm.lpSymbol && farm.lpSymbol.toUpperCase().replace('BRISESWAP', '')
-  const earnLabel = farm.dual ? farm.dual.earnLabel : 'BSWAP'
+  const lpLabel = farm.lpSymbol && farm.lpSymbol.toUpperCase().replace('StoncksUSD', '')
+  const earnLabel = farm.dual ? farm.dual.earnLabel : 'StonksUSD'
 
   const farmAPR = farm.apr && farm.apr.toLocaleString('en-US', { maximumFractionDigits: 2 })
   const liquidityUrlPathParts = getLiquidityUrlPathParts({
@@ -101,7 +101,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, account }
   })
   const addLiquidityUrl = `${BASE_ADD_LIQUIDITY_URL}/${liquidityUrlPathParts}`
   const lpAddress = farm.lpAddresses[process.env.REACT_APP_CHAIN_ID]
-  const isPromotedFarm = farm.token.symbol === 'BSWAP'
+  const isPromotedFarm = farm.token.symbol === 'StonksUSD'
 
   return (
     <FCard isPromotedFarm={isPromotedFarm}>
