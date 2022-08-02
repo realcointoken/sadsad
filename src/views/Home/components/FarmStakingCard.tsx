@@ -61,13 +61,13 @@ const FarmedStakingCard = () => {
         <Heading scale="xl" mb="24px">
           {t('Farms & Staking')}
         </Heading>
-        <CardImage src="/images/briseswap-bg-logo.svg" alt="Bswap logo" width={64} height={64} />
+        <CardImage src="/images/briseswap-bg-logo.svg" alt="StoncksUSD Swap" width={64} height={64} />
         <Block>
-          <Label>{t('Bswap to Harvest')}:</Label>
+          <Label>{t('StoncksUSD to Harvest')}:</Label>
           <CakeHarvestBalance />
         </Block>
         <Block>
-          <Label>{t('Bswap in Wallet')}:</Label>
+          <Label>{t('StoncksUSD in Wallet')}:</Label>
           <CakeWalletBalance />
         </Block>
         <Actions>
@@ -79,7 +79,7 @@ const FarmedStakingCard = () => {
               width="100%"
             >
               {pendingTx
-                ? t('Collecting Bswap')
+                ? t('Collecting StoncksUSD')
                 : t('Harvest all (%count%)', {
                     count: balancesWithValue.length,
                   })}
